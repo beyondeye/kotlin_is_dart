@@ -5,6 +5,7 @@ Here we are going to point out the main differences between the Kotlin and Dart,
 a developer coming from a Kotlin background should focus on.
 The basic Dart syntax is very similar to Java. We are not going too much to point out differences
 between the two languages that are related to this.
+This document is based on Dart version 2.18.0 and Kotlin 1.7.10
 
 ## Hello World
 ```kotlin title="Kotlin"
@@ -35,27 +36,43 @@ void main() {
 ```kotlin title="Kotlin"
     var a = 1               //variable, type inferred
     var aa:Int = 1          //variable, type explicit
+
     val b = 2               //Read-only variable, type inferred
     val bb:Int = 2          //Read-only variable, type explicit
+
     const val c = 3         //compile-time constant, type inferred
     const val cc:Int = 3    //compile-time constant, type inferred
+
+    var str:String?= null    //nullable variable
+
+    lateinit var d:String    //initialized later
 ```
 ```dart title="Dart"
     var a = 1;              //variable, type inferred
     int aa = 1;             //variable, type explicit
+
     final b = 2;            //Read-only variable, type inferred
     final int bb = 2;       //Read-only variable, type explicit
+
     const c = 3;            //compile-time constant, type inferred
     const int cc = 3;       //compile-time constant, type inferred
+
+    String? str;            //nullable variable, by default initialized to null
+
+    late String d;          //initialized later
 ```
 
 ??? info "``final`` instead of ``val``"
-    **Dart** uses the ``final`` keyword for identifying readonly variables. **Kotlin** uses the ``val`` keyword
+    **Dart** uses the [``final`` keyword](https://dart.dev/guides/language/language-tour#final-and-const) for identifying readonly variables. **Kotlin** uses the ``val`` keyword
 ??? info "``const`` instead of ``const val``"
-    **Dart** uses the ``const`` keyword for identifying compile-time constants. **Kotlin** uses the combination of keywords ``const val``
+    **Dart** uses the [``const`` keyword](https://dart.dev/guides/language/language-tour#final-and-const) for identifying compile-time constants. **Kotlin** uses the combination of keywords ``const val``
+??? info "``const`` is a more extended concept"
+    see [const variables](https://dart.dev/guides/language/language-tour#final-and-const) and [const constructors](https://dart.dev/guides/language/language-tour#constant-constructors) in **Dart** documentation.
+??? info "nullable variable are by default initialized to null"
+    **Dart**  [automatically initializes to null](https://dart.dev/guides/language/language-tour#default-value) nullable variables    
+??? info "``late`` instead of ``lateinit``"
+    **Kotlin** [``lateinit`` variables](https://kotlinlang.org/docs/properties.html#late-initialized-properties-and-variables) are called [```late``` variable](https://dart.dev/guides/language/language-tour#late-variables) in **Dart**
 
-
-## 
 
 Try a link [here](other.md#abcd) 
 
