@@ -1,4 +1,6 @@
 site_name: Kotlin is Dart
+repo_url: https://github.com/beyondeye/kotlin_is_dart
+repo_name: beyondeye/kotlin_is_dart
 theme:
   name: material
 markdown_extensions:

@@ -7,12 +7,12 @@
     in **Dart** there is also a special supertype for all enums
 ??? info "``num`` is the supertype of all numerical types"
     in **Dart** ``int`` and ``double`` has [``num`` as supertype](https://api.dart.dev/stable/2.18.0/dart-core/num-class.html)    
-### Numbers
+## Numbers
 ??? info "``int`` (64 bit integer) instead of ``Int`` and ``Long``"
     in **Dart** there is no 32bit integer type. Also on the web platform [``int``](https://api.dart.dev/stable/dart-core/int-class.html) is mapped to Javascript number  (64-bit floating-point values with no fractional part) and can be from -2^53 to 2^53 - 1.
 ??? info "``double`` (64 bit floating point) instead of ``Float`` and ``Double``"
     in **Dart** there is [no 32bit floating point type](https://dart.dev/guides/language/language-tour#numbers)
-### Strings
+## Strings
 ```kotlin title="Kotlin"
 var s = "a string"
 var sraw =
@@ -43,12 +43,12 @@ var sraw = r'In a raw string, not even \n gets special treatment.';
 
 
 
-### Booleans
+## Booleans
 ??? info "``bool`` instead of  ``Boolean``"
     see  **Dart** [bool documentation](https://dart.dev/guides/language/language-tour#booleans). see **Kotlin** [Boolean documentation](https://kotlinlang.org/docs/booleans.html)
 
 
-### Lists
+## Lists
 ```kotlin title="Kotlin"
 var a_mutable_list = mutableListOf(1,2,3)
 a_mutable_list.add(4)
@@ -121,7 +121,7 @@ print(listOfStrings); //print [#0, #1, #2, #3]
 
 https://dart.dev/guides/language/language-tour#collection-operators
 
-### Sets
+## Sets
 ```kotlin title="Kotlin"
 // a set
 var halogens = 
@@ -174,7 +174,7 @@ const constSet = {'a','b','c'};
      **Kotlin** does not have the collection_for syntax.
 
 
-### Maps
+## Maps
 ```kotlin title="Kotlin"
 //a Map<Int,String> object  
 var nobleGases = mutableMapOf(
