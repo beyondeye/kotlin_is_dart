@@ -1,6 +1,4 @@
-# Dart Languange Cheat Sheet for Kotlin developers
-
-## Introduction
+# Introduction
 Here we are going to point out the main differences between the Kotlin and Dart, that
 a developer coming from a Kotlin background should focus on.
 The basic Dart syntax is very similar to Java. We are not going too much to point out differences
