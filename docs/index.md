@@ -27,9 +27,9 @@ void main() {
     **Dart** allows both single and double quotes for defining string literals. In **Kotlin** [double quotes are required](https://kotlinlang.org/docs/strings.html#string-literals) while single quotes define [character literals](https://kotlinlang.org/docs/characters.html)
 ??? info "no ``public``, ``protected``, ``private``"
     **Dart** doesn’t have the keywords ``public``, ``protected``, and ``private``. If an identifier starts with an underscore (_), it’s [private to its library](https://dart.dev/guides/language/language-tour#libraries-and-visibility).
-??? check "string interpolation works the same"
+??? check "string interpolation works the same way"
     **Dart** [see docs](https://dart.dev/guides/language/language-tour#strings). **Kotlin**  [see docs](https://kotlinlang.org/docs/strings.html#string-templates)
-??? check "var works the same"
+??? check "``var`` works the same way"
     **Dart** is strongly typed with support for type inference like **Kotlin** 
 
 ## Variables
@@ -71,26 +71,9 @@ void main() {
 ??? info "nullable variable are by default initialized to null"
     **Dart**  [automatically initializes to null](https://dart.dev/guides/language/language-tour#default-value) nullable variables    
 ??? info "``late`` instead of ``lateinit``"
-    **Kotlin** [``lateinit`` variables](https://kotlinlang.org/docs/properties.html#late-initialized-properties-and-variables) are called [```late``` variable](https://dart.dev/guides/language/language-tour#late-variables) in **Dart**
+    **Kotlin** [``lateinit`` variables](https://kotlinlang.org/docs/properties.html#late-initialized-properties-and-variables) are called [```late``` variables](https://dart.dev/guides/language/language-tour#late-variables) in **Dart**
 
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-## 16 Comments
-
-##
 
 Try a link [here](other.md#abcd) 
 
