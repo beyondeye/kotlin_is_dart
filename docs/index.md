@@ -17,8 +17,8 @@ void main() {
 }
 
 ```
-??? info "semicolumn at end of lines"
-    **Dart** requires a semicolumns (;) at the end of code lines. In **Kotlin** they are optional
+??? info "semicolon at end of lines"
+    **Dart** requires a semicolon (;) at the end of code lines. In **Kotlin** they are optional
 ??? info "single quotes for strings"
     **Dart** allows both single and double quotes for defining string literals. In **Kotlin** [double quotes are required](https://kotlinlang.org/docs/strings.html#string-literals) while single quotes define [character literals](https://kotlinlang.org/docs/characters.html)
 ??? info "no ``public``, ``protected``, ``private``"
