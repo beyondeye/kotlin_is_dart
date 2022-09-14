@@ -142,7 +142,9 @@ print(a??b); //'a'
 They are the same (``. ?.``)
 
 ## Cascade notation
-In **Dart** [Cascades (.., ?..)](https://dart.dev/guides/language/language-tour#cascade-notation) allow you to make a sequence of operations on the same object. in **Kotlin** there are instead the [``with`` and ``apply``](https://kotlinlang.org/docs/idioms.html#call-multiple-methods-on-an-object-instance-with) idioms.
+In **Dart** [Cascades (.., ?..)](https://dart.dev/guides/language/language-tour#cascade-notation) allow you to make a sequence of operations on the same object.
+
+in **Kotlin** there are instead the [``with`` and ``apply``](https://kotlinlang.org/docs/idioms.html#call-multiple-methods-on-an-object-instance-with) idioms.
 ```kotlin title="Kotlin"
 var paint = Paint().apply {
   color = Colors.black
