@@ -12,6 +12,20 @@ print(10.1~/3); //3
 ## Equality and Relational Operators
 They are the same (``== != < <= > >= ``) 
 
+## Reference equality
+In **Dart** in order to check if two variables refers to the same class instance use ``identical``. 
+
+In **Kotlin** use ``===``.
+```kotlin title="Kotlin"
+  var a = Point(1,1)
+  var b = a
+  assert(a===b)
+```
+```dart title="Dart"
+  var a = Point(1,1);
+  var b = a;
+  assert(identical(a,b));
+```
 ## Type Test and Type Cast Operators
 The are the same except for  ``is!`` in **Dart** that is ``!is`` in **Kotlin**.
 **Kotlin** has also the [safe cast operator ``as?``](https://kotlinlang.org/docs/null-safety.html#safe-casts)
