@@ -33,8 +33,8 @@ multi-line string.""";
 var sraw = r'In a raw string, not even \n gets special treatment.';
 ```
 
-??? info "``string`` instead of ``String``"
-    in **Dart** [``string``](https://dart.dev/guides/language/language-tour#strings) are a sequence of UTF-16 code units. in **Kotlin** [``String``](https://kotlinlang.org/docs/strings.html) also are internally [encoded in utf-16](https://github.com/JetBrains/kotlin-native/issues/1185)
+??? info "``String`` is the same
+    in **Dart** [``string``](https://dart.dev/guides/language/language-tour#strings) is a sequence of UTF-16 code units. in **Kotlin** [``String``](https://kotlinlang.org/docs/strings.html) is also internally [encoded in utf-16](https://github.com/JetBrains/kotlin-native/issues/1185)
 ??? info "single quotes for strings"
     **Dart** allows both single and double quotes for defining string literals. In **Kotlin** [double quotes are required](https://kotlinlang.org/docs/strings.html#string-literals) while single quotes define [character literals](https://kotlinlang.org/docs/characters.html)
 ??? check "string interpolation works the same way"
