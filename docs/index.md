@@ -37,7 +37,7 @@ void main() {
     val bb:Int = 2          //Read-only variable, type explicit
 
     const val c = 3         //compile-time constant, type inferred
-    const val cc:Int = 3    //compile-time constant, type inferred
+    const val cc:Int = 3    //compile-time constant, type explicit
 
     var str:String?= null    //nullable variable
 
@@ -51,7 +51,7 @@ void main() {
     final int bb = 2;       //Read-only variable, type explicit
 
     const c = 3;            //compile-time constant, type inferred
-    const int cc = 3;       //compile-time constant, type inferred
+    const int cc = 3;       //compile-time constant, type explicit
 
     String? str;            //nullable variable, by default initialized to null
 
