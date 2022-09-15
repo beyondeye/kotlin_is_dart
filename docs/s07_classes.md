@@ -112,7 +112,7 @@ class PointXY(var x: Double, var y: Double) {
     var z: Double = x*y
 }
 ```
-```dart title="Dart"
+```dart title="Dart" hl_lines="7 17"
 class Point {
   double x,y;
 
@@ -156,7 +156,7 @@ var p = Point();
 In **Dart** if you want to initialize some fields in a constructor (with values not provided as parameters) there is a special syntax called ``initializer list``
 This syntax is useful for example in [named constructors](#named_constr).
 
-```dart title="Dart"
+```dart title="Dart" hl_lines="5"
 class Point {
   double x; //x not initialized here!
   double y; //y not initialized here!
@@ -165,7 +165,7 @@ class Point {
 }
 ```
 During development, you can validate inputs by using assert in the initializer list.
-```dart title="Dart"
+```dart title="Dart" hl_lines="6"
 class Point {
   double x; //x not initialized here!
   double y; //y not initialized here!
@@ -175,7 +175,7 @@ class Point {
 }
 ```
 Initializer lists are handy when setting up final fields. The following example initializes three final fields in an initializer list
-```dart title="Dart"
+```dart title="Dart" hl_lines="7 8 9"
 class Point {
   final double x;
   final double y;
@@ -191,7 +191,7 @@ class Point {
 In **Dart** [named constructor](https://dart.dev/guides/language/language-tour#constructors) are constructors with a name appended (after a dot).
 
 In **Kotlin** an identical syntax at the constructor usage site, can be obtained with factory methods in the class companion object.
-```kotlin title="Kotlin"
+```kotlin title="Kotlin" hl_lines="3"
 class Point(var x:Double,var y:Double) {
     companion object {
         fun origin() = Point(0.0,0.0)
@@ -199,7 +199,7 @@ class Point(var x:Double,var y:Double) {
 }
 var p = Point.origin()
 ```
-```dart title="Dart"
+```dart title="Dart" hl_lines="8"
 class Point {
   final double x;
   final double y;
@@ -248,7 +248,7 @@ class ImmutablePoint {
 ### Factory constructors
 In **Dart**  use the factory keyword when implementing a constructor that doesn’t always create a new instance of its class. There are also [other reasons](https://dart.dev/guides/language/language-tour#constructors) to use a factory constructors. Factory constructors does not have access to ``this``.
 In the following example, the Logger factory constructor returns objects from a cache, and the Logger.fromJson factory constructor initializes a final variable from a JSON object.
-```dart title="Dart"
+```dart title="Dart" hl_lines="10"
 class Logger {
   final String name;
   bool mute = false;
@@ -273,7 +273,7 @@ class Logger {
 ## Operators
 For **Dart** [see here](https://dart.dev/guides/language/language-tour#methods),  for  **Kotlin** [see here](https://kotlinlang.org/docs/operator-overloading.html)
 
-```kotlin title="Kotlin"
+```kotlin title="Kotlin" hl_lines="2"
 class Vector( var x:Double, var y:Double) {
     operator fun plus(other:Vector):Vector {
         return Vector(x+other.x,y+other.y)
@@ -287,7 +287,7 @@ var c= a+b
 println(c) //x:2.0, y:3.0
 ```
 
-```dart title="Dart"
+```dart title="Dart" hl_lines="4"
 class Vector {
   final double x, y;
   Vector(this.x, this.y);
@@ -306,7 +306,7 @@ print(a+b); //x:2, y:3
 ## Getters and Setters
 For **Dart** [see here](https://dart.dev/guides/language/language-tour#methods) for **Kotlin** [see here](https://kotlinlang.org/docs/properties.html#getters-and-setters)
 
-```kotlin title="Kotlin"
+```kotlin title="Kotlin" hl_lines="3 4"
 class Square(var side:Double) {
   var area:Double 
     get() = side*side
@@ -319,7 +319,7 @@ sq.area=81;
 print(sq.side); //9
 ```
 
-```dart title="Dart"
+```dart title="Dart" hl_lines="4 5"
 class Square {
   double side;
   Square(this.side);
@@ -336,7 +336,7 @@ print(sq.side); //9
 ## Static Variables and Methods
 For **Dart** [see here](https://dart.dev/guides/language/language-tour#class-variables-and-methods). For **Kotlin** [see here](https://kotlinlang.org/docs/object-declarations.html#companion-objects)
 
-```kotlin title="Kotlin"
+```kotlin title="Kotlin" hl_lines="3 4"
 class Point(val x:Double, val y:Double) {
     companion object {
         val origin = Point(0.0,0.0)
@@ -353,7 +353,7 @@ var distance = Point.distanceBetween(a, b)
 println(distance); //5
 ```
 
-```dart title="Dart"
+```dart title="Dart" hl_lines="5 6"
 class Point {
   final x, y;
   Point(this.x, this.y);
