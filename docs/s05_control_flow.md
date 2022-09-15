@@ -105,13 +105,56 @@ cities.forEach(print);
 ```  
 
 ## ``switch`` and ``case``
+For **Dart** see [switch and case](https://dart.dev/guides/language/language-tour#switch-and-case). For **Kotlin** see [when expression](https://kotlinlang.org/docs/control-flow.html#when-expression).
 ```kotlin title="Kotlin"
+var job = "nodejs dev";
+val onJavascriptDev = { println("a Javascript dev") }
+when (job) {
+    "nodejs dev" -> {
+        println("a  nodejs dev")
+        onJavascriptDev(); //no support to jump to another label like in Dart
+    }
+    "frontend dev" -> {
+        println("a frontend deb");
+        onJavascriptDev() //no support to jump to another label like in Dart
+    }
+    "android dev", "iOS dev" -> println("A mobile dev")
+    "javascript dev" -> onJavascriptDev()
+    else -> println("Unknown job")
+}
+
 ```
 ```dart title="Dart"
+var job='nodejs dev';
+switch (job) {
+  case 'nodejs dev':
+    print("a  nodejs dev");
+    continue javascript_dev;
+  case 'frontend dev':
+    print("a frontend deb");
+    continue javascript_dev;
+  case 'android dev':
+  case 'iOS dev':
+    print("A mobile dev");
+    break;
+  javascript_dev:    
+  case 'javascript dev':
+    print("a Javascript dev");
+    break;
+  default:
+    print("Unknown job");
+}
 ```  
-**Kotlin** support also [when expression](https://kotlinlang.org/docs/control-flow.html#when-expression)
+??? info " ``case`` fall-through is prohibited"
+    Only empty  ``case`` fall-through is allowed.
+     **Dart** requires ``break`` at the end of each ``case`` . Other valid ways to end a non-empty case clause are a ``continue`` (continue execution to another clause), ``throw``, or ``return`` statement.
+??? info "overriding == for compared object is prohibited"
+    **Dart** does not allow classes for objects that are compared in a ``switch`` statement [to override ``operator==``]()
+
 ## ``assert``
 ```kotlin title="Kotlin"
 ```
 ```dart title="Dart"
 ```  
+
+
