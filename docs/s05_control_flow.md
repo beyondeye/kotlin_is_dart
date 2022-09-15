@@ -152,9 +152,31 @@ switch (job) {
     **Dart** does not allow classes for objects that are compared in a ``switch`` statement [to override ``operator==``]()
 
 ## ``assert``
+in **Dart** [Debug mode](https://docs.flutter.dev/testing/debugging#debug-mode-assertions) use [``assert(condition, optionalMessage)``](https://dart.dev/guides/language/language-tour#assert) to disrupt normal execution if a boolean condition is false.
+
+In **Kotlin** [assert is supported](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/assert.html) for JVM and Native platforms;
 ```kotlin title="Kotlin"
+// Make sure the variable has a non-null value.
+assert(text != null)
+
+// Make sure the value is less than 100.
+assert(number < 100)
+
+// Make sure this is an https URL.
+//To attach a message to an assertion, add a string as the second argument to assert
+assert(urlString.startsWith("https")){"URL ($urlString) should start with \"https\"."}
 ```
 ```dart title="Dart"
+// Make sure the variable has a non-null value.
+assert(text != null);
+
+// Make sure the value is less than 100.
+assert(number < 100);
+
+// Make sure this is an https URL.
+//To attach a message to an assertion, add a string as the second argument to assert
+assert(urlString.startsWith('https'),'URL ($urlString) should start with "https".');
+
 ```  
 
 
