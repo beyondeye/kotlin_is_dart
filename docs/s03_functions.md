@@ -64,10 +64,10 @@ bool isEvent(int number) => number%2==0;
 
 print(isEvent(2)); //true
 ```
-??? info "default return value is null"
+??? info "function default return value is null"
     in **Dart** [default return value](https://dart.dev/guides/language/language-tour#return-values) is ``null`` . In **Kotlin** default return value is ``Unit``
 ??? info "it is possible to omit parameters types and/or return value"
-    in **Dart** function parameters [with no specified type](https://dart.dev/guides/language/language-tour#functions) are considered ``dynamic``, and return type if not specified is considered ``dynamic``. In **Kotlin** parameter types must be specified, and also return value unless using the ``fun function(<params>) = <value>`` syntax
+    in **Dart** function parameters [with no specified type](https://dart.dev/guides/language/language-tour#functions) are considered ``dynamic``, and return type if not specified is considered ``dynamic``. In **Kotlin** parameter types must be specified, and also return value unless using the ``fun function(<params>) = <calculation>`` syntax
 
 
 ## Lambda functions
@@ -129,21 +129,6 @@ print(adder(2)); //4
 
 ## Named Arguments, Optional Positional Parameters
 
-```kotlin title="Kotlin"
-fun addArgumentsWithNamedParameter(a:Int, b:Int, c:Int=0):Int {
-    var res=a+b+c
-    return res
-}
-
-fun addArgumentsWithOptionalPositionalParameters(a:Int, b:Int=0, c:Int=0):Int {
-    var res=a+b+c
-    return res
-}
-
-println(addArgumentsWithNamedParameter(1,b=2,c=3)) //6
-println(addArgumentsWithOptionalPositionalParameters(1)) //1
-```
-
 ```Dart title="Dart"
 // - A function can have any number of REQUIRED POSITIONAL parameters.
 //   These can be followed either by NAMED parameters or by OPTIONAL 
@@ -155,16 +140,33 @@ println(addArgumentsWithOptionalPositionalParameters(1)) //1
 //   use the syntax: <Param> = <Value> to define default values. 
 //   Default values must be compile-time constants.
 //   If no default value is provided, the default value is null
-int addArgumentsWithNamedParameter(int a, {required int b, int c=0}) {
+int addWithNamedParameters(int a, {required int b, int c=0}) {
     var res=a+b+c;
       return res;
 }
 
-int addArgumentsWithOptionalPositionalParameters(int a, [int b=0, int c=0]) {
+int addWithOptionalPositionalParameters(int a, [int b=0, int c=0]) {
     var res=a+b+c;
       return res;
 }
 
-print(addArgumentsWithNamedParameter(1,b:2,c:3)); //6
-print(addArgumentsWithOptionalPositionalParameters(1)); //1
+print(addWithNamedParameters(1,b:2,c:3)); //6
+print(addWithOptionalPositionalParameters(1)); //1
 ```
+
+```kotlin title="Kotlin"
+//actually in Kotlin any parameter can be a named parameter
+fun addWithNamedParameters(a:Int, b:Int, c:Int=0):Int {
+    var res=a+b+c
+    return res
+}
+
+fun addWithOptionalPositionalParameters(a:Int, b:Int=0, c:Int=0):Int {
+    var res=a+b+c
+    return res
+}
+
+println(addWithNamedParameters(1,b=2,c=3)) //6
+println(addWithOptionalPositionalParameters(1)) //1
+```
+
