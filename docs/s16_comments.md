@@ -11,4 +11,4 @@
 ## Documentation Comments
 ??? info "work in a similar way"
     **Dart** [see docs](https://dart.dev/guides/language/language-tour#documentation-comments). **Kotlin**  [see docs](https://kotlinlang.org/docs/kotlin-doc.html)
-    In **Dart** it is possible to define documentation comments with multiple single-line comments started with ``///```
+    In **Dart** it is possible to define documentation comments with multiple single-line comments started with ``///``
