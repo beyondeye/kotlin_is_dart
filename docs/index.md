@@ -1,5 +1,13 @@
 # Introduction
-This document is based on Dart version 2.18.0 and Kotlin 1.7.10
+Are you a Kotlin developer that wants to learn Dart, or a Dart developer that wants to learn Kotlin, with least possible effort? Then you are in the right place!
+
+**Important note**: info boxes that does not specify if they refer to Kotlin or Dart by default are referring to Dart. for example:
+!!! info "semicolon at end of lines"
+
+This document is based on 
+
+- **Dart version 2.18.0**
+- **Kotlin 1.7.10**
 
 ## Hello World
 The basic Dart syntax is very similar to Java. 
