@@ -71,5 +71,5 @@ print ('BB'.wrappedWithA()); //ABBA
     static type at a compile time. 
 
 ## Extension Methods Visibility
-There are several important details about extension methods visibility and disambiguation. For **Dart* see [here](https://dart.dev/guides/language/extension-methods#api-conflicts)
+There are several important details about extension methods visibility and disambiguation. For **Dart** see [here](https://dart.dev/guides/language/extension-methods#api-conflicts)
 for **Kotlin** see [here](https://kotlinlang.org/docs/extensions.html#scope-of-extensions)  
