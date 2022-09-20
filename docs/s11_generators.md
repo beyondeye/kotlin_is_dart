@@ -1,2 +1,0 @@
-# Generators
-DOCUMENTATION COMING SOON!
