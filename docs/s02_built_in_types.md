@@ -112,14 +112,12 @@ print(listOfStrings); //print [#0, #1, #2, #3]
      **Kotlin** does not have the collection spread operator.
 
 ??? info "lists has the ``collection_if`` construct"
-    see  **Dart** [List documentation](https://dart.dev/guides/language/language-tour#lists). see also the [control flow collections proposal](https://github.com/dart-lang/language/blob/master/accepted/2.3/control-flow-collections/feature-specification.md).
+    see  **Dart** [List documentation](https://dart.dev/guides/language/language-tour#collection-operators). see also the [control flow collections proposal](https://github.com/dart-lang/language/blob/master/accepted/2.3/control-flow-collections/feature-specification.md).
      **Kotlin** does not have the collection if syntax.
 
 ??? info "lists has the ``collection_for`` construct"
-    see  **Dart** [List documentation](https://dart.dev/guides/language/language-tour#lists). see also the [control flow collections proposal](https://github.com/dart-lang/language/blob/master/accepted/2.3/control-flow-collections/feature-specification.md).
+    see  **Dart** [List documentation](https://dart.dev/guides/language/language-tour#collection-operators). see also the [control flow collections proposal](https://github.com/dart-lang/language/blob/master/accepted/2.3/control-flow-collections/feature-specification.md).
      **Kotlin** does not have the collection_for syntax.
-
-https://dart.dev/guides/language/language-tour#collection-operators
 
 ## Sets
 ```kotlin title="Kotlin"
