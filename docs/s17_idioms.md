@@ -34,3 +34,47 @@ var aSet = {"a","b","c"};
 var setCopy = {...aSet};
 ```
 
+## checking parameters validity and assigning fields in constructor
+
+```dart title="Dart" hl_lines="7"
+class Rectangle {
+  final double width;
+  final double height;
+  final double area;
+  Rectangle(
+    this.width,this.height
+  ): assert(width>0),assert(height>0),area=width*height;
+}
+```
+# copying a class with one or more modified fields
+
+```kotlin title="Kotlin"
+class Rectangle(val width:Double,val height:Double)
+{
+  fun copy(width:Double?=null, height:Double?=null) =
+    Rectangle(
+      width ?: this.width, 
+      height ?: this.height
+    )  
+}
+
+// in kotlin you can simply define a data class to have 
+// the copy method automatically generated
+data class Rectangle(val width:Double,val height:Double)
+```
+
+
+```dart title="Dart"
+class Rectangle {
+  final double width;
+  final double height;
+  Rectangle(this.width,this.height);
+  
+  Rectangle copy({double? width, double? height}) =>
+    Rectangle(
+      width ?? this.width, 
+      height ?? this.height
+    );
+}
+```
+
